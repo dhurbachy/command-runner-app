@@ -40,17 +40,3 @@ Ensure you have Rust and Node.js installed. [3, 8]
    3. Run in development: npm run tauri dev
    4. Build production executable: npm run tauri build [9, 10, 11] 
 
-------------------------------
-Next Steps: Would you like to add a "Troubleshooting" section to this README or perhaps an "Upcoming Features" roadmap to address the limitations?
-
-[1] [https://medium.com](https://medium.com/@ddunama2007/how-to-write-a-readme-file-for-github-projects-dc72298546b5)
-[2] [https://dev.to](https://dev.to/pachicodes/readme-or-ill-devour-you-how-to-write-a-good-readme-592n)
-[3] [https://medium.com](https://medium.com/@richard.stromer/lets-learn-tauri-and-rust-by-building-an-ebook-manager-34c84e4b3788)
-[4] [https://www.youtube.com](https://www.youtube.com/watch?v=qx6uqLWdqOA&t=60)
-[5] [https://www.youtube.com](https://www.youtube.com/watch?v=7Tk15l23Ctg&t=235)
-[6] [https://www.youtube.com](https://www.youtube.com/watch?v=AFFHh1Xq6Qc)
-[7] [https://ravindrandharshan.medium.com](https://ravindrandharshan.medium.com/how-to-set-up-a-react-project-using-vite-48d544728caf)
-[8] [https://www.youtube.com](https://www.youtube.com/watch?v=XmTdvx4xM6I&t=346)
-[9] [https://github.com](https://github.com/ashurajchandra/React-Project/blob/master/README.md)
-[10] [https://github.com](https://github.com/evelinsteiger/README-template#:~:text=Running%20the%20web%20application%20%28Frontend%29%20%23%20Clone,the%20port:%203000%20%2D%20go%20to%20http://localhost:3000.)
-[11] [https://www.freecodecamp.org](https://www.freecodecamp.org/news/how-to-structure-your-readme-file/)
