@@ -7,16 +7,16 @@ fn greet(name: &str) -> String {
 }
 #[tauri::command]
 fn run_shell_command(cmd:String)->String{
-    let output=if cfg!(target_os="windows"){
-        Command::new("cmd").args(["/C",&cmd]).output()
+    let process=if cfg!(target_os="windows"){
+        Command::new("cmd").args(["/C",&cmd]).spawn()
 
     }else{
-     Command::new("sh").args(["-c",&cmd]).output()
+     Command::new("sh").args(["-c",&cmd]).spawn()
     };
 
-    match output {
-        Ok(out) => String::from_utf8_lossy(&out.stdout).to_string(),
-        Err(e) => format!("Error: {}", e),
+    match process {
+        Ok(_) => "Process started successfully.".to_string(),
+        Err(e) => format!("Failed to start process: {}", e),
     }
 }
 
