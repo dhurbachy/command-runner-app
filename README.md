@@ -1,5 +1,4 @@
-Here is a professional and comprehensive README.md for your Command Runner project. It showcases the visual identity, explains the core functionality, and clearly outlines the current limitations. [1] 
-------------------------------
+
 ## 🛠️ Command Runner v1.0
 A high-performance, lightweight desktop terminal bridge built with Tauri, React, and TypeScript. This application allows users to execute system-level shell commands through a sleek, modern, and customized user interface.
 
