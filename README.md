@@ -12,7 +12,7 @@ A high-performance, lightweight desktop terminal bridge built with Tauri, React,
    * ⚪ White: Standard output (stdout)
    * 🔴 Red: System and execution errors
    * 🟢 Green: Successful command exits
-* Interactive Terminal Elements: Features a blinking cursor and auto-scrolling output area to mimic a native shell experience. [4, 5, 6, 7] 
+* Interactive Terminal Elements: Features a blinking cursor and auto-scrolling output area to mimic a native shell experience.
 
 ## 🚀 Working Functionality
 
@@ -21,7 +21,7 @@ A high-performance, lightweight desktop terminal bridge built with Tauri, React,
 * Browsers: Open Chrome or Edge in standard or Incognito/InPrivate modes.
    * System Tools: Directly trigger the Windows Snipping Tool overlay.
 * Command History: Save and navigate through previous commands using the Up and Down arrow keys.
-* Exit Monitoring: Displays the exit code (e.g., 0 for success, 1 for error) for every executed task. [3] 
+* Exit Monitoring: Displays the exit code (e.g., 0 for success, 1 for error) for every executed task.
 
 ## ⚠️ Current Limitations
 While powerful, version 1.0 has specific constraints:
@@ -32,11 +32,11 @@ While powerful, version 1.0 has specific constraints:
 * Blocking Execution: The UI remains in a "Running" state until the shell process returns, which may temporarily disable input for long tasks.
 
 ## 🛠️ Development & Setup## Prerequisites
-Ensure you have Rust and Node.js installed. [3, 8] 
+Ensure you have Rust and Node.js installed.
 ## Installation
 
-   1. Clone the repo: git clone <your-repo-url>
+   1. Clone the repo: git clone https://github.com/dhurbachy/command-runner-app
    2. Install JS dependencies: npm install
    3. Run in development: npm run tauri dev
-   4. Build production executable: npm run tauri build [9, 10, 11] 
+   4. Build production executable: npm run tauri build
 
