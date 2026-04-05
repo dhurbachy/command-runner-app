@@ -1,7 +1,57 @@
-# Tauri + React + Typescript
+Here is a professional and comprehensive README.md for your Command Runner project. It showcases the visual identity, explains the core functionality, and clearly outlines the current limitations. [1] 
+------------------------------
+## 🛠️ Command Runner v1.0
+A high-performance, lightweight desktop terminal bridge built with Tauri, React, and TypeScript. This application allows users to execute system-level shell commands through a sleek, modern, and customized user interface.
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
 
-## Recommended IDE Setup
+## ✨ Visual Experience
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+* Modern Terminal UI: A custom-built, dark-themed terminal interface using the Space Mono and Syne font families.
+* Real-time Feedback: Includes a title bar with window controls and a dynamic Status Pill that indicates whether the system is "READY" or "RUNNING" a process.
+* Styled Output: Terminal logs are color-coded for clarity:
+* 🔵 Blue: Command prompts
+   * ⚪ White: Standard output (stdout)
+   * 🔴 Red: System and execution errors
+   * 🟢 Green: Successful command exits
+* Interactive Terminal Elements: Features a blinking cursor and auto-scrolling output area to mimic a native shell experience. [4, 5, 6, 7] 
+
+## 🚀 Working Functionality
+
+* Shell Integration: Executes commands directly on the host OS (CMD for Windows, Sh for Linux/macOS) via a [Rust-based backend](https://v2.tauri.app/start/create-project/).
+* App Launching: Capable of launching external applications such as:
+* Browsers: Open Chrome or Edge in standard or Incognito/InPrivate modes.
+   * System Tools: Directly trigger the Windows Snipping Tool overlay.
+* Command History: Save and navigate through previous commands using the Up and Down arrow keys.
+* Exit Monitoring: Displays the exit code (e.g., 0 for success, 1 for error) for every executed task. [3] 
+
+## ⚠️ Current Limitations
+While powerful, version 1.0 has specific constraints:
+
+* Non-Interactive Only: Cannot handle commands requiring interactive user input (e.g., git commit without -m or npm init prompts) as it will hang the process.
+* Standard Privilege: Execution is limited to the current user's permissions. It cannot automatically elevate to Administrator/Sudo for protected system tasks.
+* Buffer-Based Output: Output is returned only after the command finishes. It does not currently support real-time line-by-line streaming for long-running processes like ping.
+* Blocking Execution: The UI remains in a "Running" state until the shell process returns, which may temporarily disable input for long tasks.
+
+## 🛠️ Development & Setup## Prerequisites
+Ensure you have Rust and Node.js installed. [3, 8] 
+## Installation
+
+   1. Clone the repo: git clone <your-repo-url>
+   2. Install JS dependencies: npm install
+   3. Run in development: npm run tauri dev
+   4. Build production executable: npm run tauri build [9, 10, 11] 
+
+------------------------------
+Next Steps: Would you like to add a "Troubleshooting" section to this README or perhaps an "Upcoming Features" roadmap to address the limitations?
+
+[1] [https://medium.com](https://medium.com/@ddunama2007/how-to-write-a-readme-file-for-github-projects-dc72298546b5)
+[2] [https://dev.to](https://dev.to/pachicodes/readme-or-ill-devour-you-how-to-write-a-good-readme-592n)
+[3] [https://medium.com](https://medium.com/@richard.stromer/lets-learn-tauri-and-rust-by-building-an-ebook-manager-34c84e4b3788)
+[4] [https://www.youtube.com](https://www.youtube.com/watch?v=qx6uqLWdqOA&t=60)
+[5] [https://www.youtube.com](https://www.youtube.com/watch?v=7Tk15l23Ctg&t=235)
+[6] [https://www.youtube.com](https://www.youtube.com/watch?v=AFFHh1Xq6Qc)
+[7] [https://ravindrandharshan.medium.com](https://ravindrandharshan.medium.com/how-to-set-up-a-react-project-using-vite-48d544728caf)
+[8] [https://www.youtube.com](https://www.youtube.com/watch?v=XmTdvx4xM6I&t=346)
+[9] [https://github.com](https://github.com/ashurajchandra/React-Project/blob/master/README.md)
+[10] [https://github.com](https://github.com/evelinsteiger/README-template#:~:text=Running%20the%20web%20application%20%28Frontend%29%20%23%20Clone,the%20port:%203000%20%2D%20go%20to%20http://localhost:3000.)
+[11] [https://www.freecodecamp.org](https://www.freecodecamp.org/news/how-to-structure-your-readme-file/)
